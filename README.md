@@ -28,8 +28,10 @@ kubeconfig path is: ~/.kube/config
 
 provide a json file with the namespaces and api endpoints to validate.
 
+```
 kaval
 		-c [Path to config file]
 		-verbose
 		-url uri to reach cluster, default is localhost
 		-f path to test file (default is test_conf.json)
+```
