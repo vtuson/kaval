@@ -1,8 +1,8 @@
 # kaval
 
-This is a small tool that validates kubeapps deployment. It checks for:
-* pod status in kubeless, kube-system and kubeapps namespackes
-* endpoint status in kubeless, kube-system and kubeapps namespackes
+This is a small tool that validates kubernetes deployments. It checks for:
+* pod status in namespaces
+* endpoint status in namespaces
 * reaches out to the three main api endpoints externall to validate that ingress and services are working (checks for a response code below 400)
 
 
@@ -25,3 +25,11 @@ kubeconfig path is: ~/.kube/config
 		Overall: PASS
 ----------------------------------------
 ```
+
+provide a json file with the namespaces and api endpoints to validate.
+
+kaval
+		-c [Path to config file]
+		-verbose
+		-url uri to reach cluster, default is localhost
+		-f path to test file (default is test_conf.json)
