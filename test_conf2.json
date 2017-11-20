@@ -1,0 +1,4 @@
+{
+"namespaces":["default"],
+"endpoints":["/","/api/v1/repos","/kubeless"]
+}
